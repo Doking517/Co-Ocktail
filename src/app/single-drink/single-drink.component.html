@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div *ngFor="let drink of singleDrink.drinks" class="cocktail">
+      <img [src]="drink.strDrinkThumb" [alt]="drink.strDrink" class="cocktail-image">
+    <div class="cocktail-info">
+
+              <p><strong>Name:</strong> {{drink.strDrink}}</p>
+              <p><strong>Created at:</strong> {{drink.dateModified |date}}</p>
+              <p><strong>Glass used</strong> {{drink.strGlass}}</p>
+              <P><strong>Category: </strong> {{drink.strCategory}}</P>
+              <p><strong>Type:</strong> {{drink.strAlcoholic}}</p>
+
+              <span>
+                <strong>ingredients:</strong>
+                <ul>
+                  <li >{{drink.strIngredient1}}</li>
+                  <li>{{drink.strIngredient2}}</li>
+                  <li>{{drink.strIngredient3}}</li>
+                  <li>{{drink.strIngredient4}}</li>
+                  <li>{{drink.strIngredient6}}</li>
+              </ul>
+            </span>
+
+        <div class="instructions">
+        <p><strong>Instructions:</strong> {{drink.strInstructions}}</p>
+          <strong><i>Enjoy your drink...🥂</i></strong>
+
+        </div>
+    </div>
+
+  </div>
+</div>
+

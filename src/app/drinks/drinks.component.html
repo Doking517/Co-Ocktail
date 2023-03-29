@@ -1,0 +1,20 @@
+<div class="container">
+  <div *ngIf="drinks">
+    <div *ngFor="let drink of drinks" class="drinks-container">
+      <div class="drink-image">
+        <img [src]='drink.strDrinkThumb' [alt]="drink.strDrink">
+      </div>
+      <div class="drink-details">
+        <p><strong>Category:</strong> {{drink.strCategory}}</p>
+        <p><strong>Date:</strong>{{drink.dateModified | date}}</p>
+        <p><strong>Glass type:</strong>{{drink.strGlass}}</p>
+        <a [routerLink]="['/drink',+drink.idDrink]">see more</a>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!drinks" class="conction-error">
+    <h3>Something went wrong!!!<i>
+      please make sure you are connected and try again...
+    </i> </h3>
+  </div>
+</div>

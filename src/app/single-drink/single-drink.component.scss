@@ -1,0 +1,45 @@
+.cocktail{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: gray 2px 2px 5px 3px;
+  border-radius: 10px;
+  .cocktail-image{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+
+
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .cocktail{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    .cocktail-image{
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+}
+@media screen and (max-width: 820px), (max-width: 912px){
+  .cocktail{
+    display: flex;
+    flex-direction: column;
+    .cocktail-image{
+      width: auto;
+      height: auto;
+      object-fit: contain;
+
+    }
+  }
+
+}

@@ -1,0 +1,66 @@
+.container{
+  overflow: hidden;
+  display:  flex;
+  justify-content: space-between;
+
+  .logo-in-footer{
+    width: 600px;
+  }
+  .logo-in-footer .logo{
+   font-family: Pacifico, "Segoe UI Semilight", sans-serif;
+  }
+  .footer-links{
+    display:block;
+    .footer-link-item a{
+      text-decoration: none;
+      color: #274C5B;
+      &:hover{
+        text-decoration: underline;
+        transition: ease-out;
+        transition-duration: 500ms;
+        color: red;
+
+      }
+    }
+    .nav-link-footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+  }
+}
+@media  screen and (max-width: 750px){
+  .container{
+    margin: 0;
+    padding: 1rem;
+    overflow: hidden;
+    display: block;
+    justify-content: space-evenly;
+    gap: 10%;
+    & h1{
+      font-size: 20px;
+    }
+    hr{
+      display: none;
+    }
+  .footer-links  {
+    padding: 0 2%;
+    & .nav-link-footer{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap:12%;
+    }
+
+
+  }
+    .cocktails-footer-text p{
+      width: 55%;
+      text-align: justify-all;
+
+    }
+  }
+
+}

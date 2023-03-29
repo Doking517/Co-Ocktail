@@ -1,0 +1,64 @@
+$flou: black;
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo{
+    font-family: Pacifico,"Segoe UI Semilight",sans-serif;
+    font-weight: bolder;
+  }
+  .navbar-links-container{
+    //border: pink 1px solid;
+    width: 20%;
+  }
+  .navbar-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    font-family: "Poppins Light",Rockwell,sans-serif;
+    font-weight: bold;
+
+    a{
+      text-decoration: none;
+      color: #274C5B;
+      &:hover{
+        //text-decoration: underline;
+        transition: ease-out;
+        transition-duration: 500ms;
+        color: gray;
+
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content:center ;
+    .logo{
+      font-size: x-large;
+    }
+    .navbar-links{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+    }
+  }
+
+
+
+}

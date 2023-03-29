@@ -1,0 +1,52 @@
+.logos{
+  font-family: Pacifico, "Segoe UI Semilight", sans-serif;
+}
+.title{
+  font-size: 50px;
+  text-align: center;
+}
+.about-text{
+  text-align: center;
+  text-justify: auto;
+}
+.about-banner{
+  padding: 2%;
+  height: auto;
+  width: 100%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .darken-image ,.cocktail-fruit{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+   margin: 5% 0;
+    .farmer-image,.colorful-fruits{
+      width:40% ;
+      border: 10px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  }
+
+
+}
+@media screen and (max-width: 750px) {
+  .container{
+    padding: 2%;
+    .darken-image, .cocktail-fruit{
+    }
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  .farmer-image, .colorful-fruits{
+    display: none;
+  }
+  }
+
+}
